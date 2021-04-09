@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/devchallenges.png" />
+    <title>Image viewer | challenge</title>
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="loader hide">
+        <p>Uploading...</p>
+        <br>
+        <div id="progress">
+            <div id="value"></div>
+        </div>
+    </div>
+    <div class="card-viewer">
+        <!--Div for loader image-->
+        <div class="group">
+            <img src="/assets/ic_check_circle_48px.svg" alt="icon Suscessfully">
+            <h2>Uploaded Suscessfully!</h2>
+            <div class="card-body">
+                <div class="image-viewer">
+                    <img id="image" src="/assets/image.svg" alt="image unload">
+                </div>
+            </div>
+
+            <div class="link-viewer">
+                <input type="text">
+                <button id="unload-btn" class="copy-link" type="button">Copy Link</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>created by <b>RoynerOM</b> - devChallenges.io</p>
+    </footer>
+    <script src="/src/javascript/unload.js"></script>
+</body>
+
+</html>

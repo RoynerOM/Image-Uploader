@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/devchallenges.png" />
+    <title>Unload Image | challenge</title>
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="loader hide">
+        <p>Uploading...</p>
+        <br>
+        <div id="progress">
+            <div id="value"></div>
+        </div>
+    </div>
+    <div class="card-load">
+        <!--Div for loader image-->
+        <div class="group">
+            <h2>Upload your image</h2>
+            <p>File should be Jpeg,Png...</p>
+            <div class="card-body">
+                <div class="image-content">
+                    <input type="file" id="input-file" accept="image/*">
+                    <img id="image" src="/assets/image.svg" alt="image unload">
+                    <br>
+                    <p id="info">Drag & Drop your image here</p>
+                </div>
+                <br>
+                <p>Or</p>
+            </div>
+
+            <button id="unload-btn" class="choose-file" type="button">Choose a file</button>
+        </div>
+    </div>
+    <footer>
+        <p>created by <b>RoynerOM</b> - devChallenges.io</p>
+    </footer>
+    <script src="/src/javascript/unload.js"></script>
+</body>
+
+</html>
